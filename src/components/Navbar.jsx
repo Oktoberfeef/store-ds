@@ -535,7 +535,6 @@ const Navbar = () => {
                         <Img5><img src={pods1}/></Img5>
                         <Img6><img src={pods2}/></Img6>
                         <Img7><img src={pods3}/></Img7>
-                        <Img7><img src={pods3}/></Img7>
                     </Cont_img3>
                     <Cont_img4>
                         <Text5>Apple BYZ S852I <Star>★ 4.7</Star></Text5>
