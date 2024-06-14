@@ -501,6 +501,7 @@ const Navbar = () => {
                 <Wrapper>
                     <Left>
                         <TextLink href="/"><Logo>QPICK</Logo></TextLink>
+                        <TextLink href="/"><Logo>QPICK</Logo></TextLink>
                     </Left>
                     <Center>
                         <SmartphoneIcon style={{padding: 30}}/>
