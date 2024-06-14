@@ -1,24 +1,24 @@
-Сайт QPICK продажи аксессуаров телефонов (наушники, держатели, чехлы)
+<h2>Сайт QPICK продажи аксессуаров телефонов (наушники, держатели, чехлы)</h2>
 
-Использованные Библиотеки : styled components, react-router-dom, react-animated-css
+<h3>Использованные Библиотеки : styled components, react-router-dom, react-animated-css</h3>
 
-Авторы : Илья Пономарёв, Илья Маслобитов и Алексей Муратов
+<h3>Авторы : Илья Пономарёв, Илья Маслобитов и Алексей Муратов</h3>
 
-Клонировать и запустить:
+<h3>Клонировать и запустить:</h3>
 
-git clone https://github.com/Oktoberfeef/store-ds.git .
+<h4>git clone https://github.com/Oktoberfeef/store-ds.git .</h4>
 
-npm install
+<h4>npm install</h4>
 
-npm run dev
+<h4>npm run dev</h4>
 
-Библиотеки:
+<h3>Библиотеки:</h3>
 
-npm i react-animated-css
+<h4>npm i react-animated-css</h4>
 
-npm i styled-components
+<h4>npm i styled-components</h4>
 
-npm i react-router-dom
+<h4>npm i react-router-dom</h4>
 
 <h3>День 1 (28 мая)</h3>
 <h4>Начали ознакомление с github</h4>
