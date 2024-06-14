@@ -1,7 +1,8 @@
-Использованные Библиотеки : Styled components, react-router-dom
+Использованные Библиотеки : Styled components, react-router-dom, react-animated-css
 
 Авторы : Илья Пономарёв, Илья Маслобитов и Алексей Муратов
 
+git clone 
 
 <h3>День 1 (28 мая)</h3>
 <h4>Начали ознакомление с github</h4>
