@@ -7,6 +7,7 @@ import { Home, ShoppingCartOutlined} from "@mui/icons-material";
 import olejka from '../pictures/telejka.jpg';
 import Facebook from "../pictures/Facebook.jpg";
 import Telegram from "../pictures/telegram.jpg";
+import {Animated} from "react-animated-css";
 
 const p = styled.div`
 `
@@ -22,10 +23,7 @@ const Container = styled.div`
     background-color: #ffffff;
 `
 
-const Q = styled.div`
-`
-
-const Wrapper = styled.div`
+const Header = styled.div`
     padding-bottom: 60px;
     display: flex;
     justify-content: space-between;
@@ -141,24 +139,28 @@ const Cart = () => {
   return (
     <p>
       <Container>
-        <Wrapper>
-          <Left>
-            <TextLink href="/"><Logo>QPICK</Logo></TextLink>
-          </Left>
-          <Center>
-            <SmartphoneIcon style={{padding: 30}}/>
-            <SearchContainer><SearchIcon style={{color: "gray", fontSize:16}}/><Input placeholder = "Введите модель телефона"></Input></SearchContainer>
-          </Center>
-          <Right>
-            <TextLink href="/registration"><MenuItem>Регистрация</MenuItem></TextLink> 
-            <TextLink href="/login"><MenuItem>Войти</MenuItem></TextLink>
-            <TextLink href="/cart"><MenuItem><Badge badgeContent={4} color="primary"><ShoppingCartOutlined/></Badge></MenuItem></TextLink>
-          </Right>
-        </Wrapper>
-        <Img0><img src={olejka}/></Img0>
-        <Yrw><Text>Корзина пуста</Text></Yrw>
-        <Wry><Text1>Но это никогда не поздно исправить :)</Text1></Wry>
-        <TextLink0 href="/"><Button>В каталог товаров</Button></TextLink0>
+        <Animated animationIn="bounceInDown" animationOut="fadeOut" isVisible={true}>
+          <Header>
+            <Left>
+              <TextLink href="/"><Logo>QPICK</Logo></TextLink>
+            </Left>
+            <Center>
+              <SmartphoneIcon style={{padding: 30}}/>
+              <SearchContainer><SearchIcon style={{color: "gray", fontSize:16}}/><Input placeholder = "Введите модель телефона"></Input></SearchContainer>
+            </Center>
+            <Right>
+              <TextLink href="/registration"><MenuItem>Регистрация</MenuItem></TextLink> 
+              <TextLink href="/login"><MenuItem>Войти</MenuItem></TextLink>
+              <TextLink href="/cart"><MenuItem><Badge badgeContent={4} color="primary"><ShoppingCartOutlined/></Badge></MenuItem></TextLink>
+            </Right>
+          </Header>
+        </Animated>
+        <Animated animationIn="bounceInRight" animationOut="fadeOut" isVisible={true}>
+          <Img0><img src={olejka}/></Img0>
+        </Animated>
+          <Yrw><Text>Корзина пуста</Text></Yrw>
+          <Wry><Text1>Но это никогда не поздно исправить :)</Text1></Wry>
+          <TextLink0 href="/"><Button>В каталог товаров</Button></TextLink0>
       </Container>
     </p>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import {Animated} from "react-animated-css";
 import SmartphoneIcon from '@mui/icons-material/Smartphone';
 import SearchIcon from '@mui/icons-material/Search';
 import { Badge } from '@mui/material';
@@ -41,10 +42,10 @@ const Container = styled.div`
     background-color: #ffffff;
 `
 
-const Q = styled.div`
+const Footer = styled.div`
 `
 
-const Wrapper = styled.div`
+const Header = styled.div`
     padding-bottom: 60px;
     display: flex;
     justify-content: space-between;
@@ -498,86 +499,90 @@ const Navbar = () => {
     return (
         <p>
             <Container>
-                <Wrapper>
-                    <Left>
-                        <TextLink href="/"><Logo>QPICK</Logo></TextLink>
-                    </Left>
-                    <Center>
-                        <SmartphoneIcon style={{padding: 30}}/>
-                        <SearchContainer><SearchIcon style={{color: "gray", fontSize:16}}/><Input placeholder = "Введите модель телефона"></Input></SearchContainer>
-                    </Center>
-                    <Right>
-                        <TextLink href="/registration"><MenuItem>Регистрация</MenuItem></TextLink> 
-                        <TextLink href="/login"><MenuItem>Войти</MenuItem></TextLink>
-                        <TextLink href="/cart"><MenuItem><Badge badgeContent={4} color="primary"><ShoppingCartOutlined/></Badge></MenuItem></TextLink>
-                    </Right>
-                </Wrapper>
-                <Bblock1>
-                        <Text1>Аксессуары для <br/>Iphone 13 Pro Max</Text1> 
-                        <Img1><img src={Phone}/></Img1>
-                </Bblock1>
-                <Cases>Чехлы</Cases>
-                <Bblock2>
-                    <Cont_img1>
-                        <TextLink href="/glass"><Img2><img src={case1}/></Img2></TextLink>
-                        <TextLink href="/silicone"><Img3><img src={case2}/></Img3></TextLink>
-                        <TextLink href="/leather"><Img4><img src={case3}/></Img4></TextLink>
-                    </Cont_img1>
-                    <Cont_img2>
-                        <TextLink href="/glass"><Text2>Стеклянные</Text2></TextLink>
-                        <TextLink href="/silicone"><Text3>Силиконовые</Text3></TextLink>
-                        <TextLink href="/leather"><Text4>Кожаные</Text4></TextLink>
-                    </Cont_img2>
-                </Bblock2>
-                <Pods>Наушники</Pods>
-                <Block3>
-                    <Cont_img3>
-                        <Img5><img src={pods1}/></Img5>
-                        <Img6><img src={pods2}/></Img6>
-                        <Img7><img src={pods3}/></Img7>
-                    </Cont_img3>
-                    <Cont_img4>
-                        <Text5>Apple BYZ S852I <Star>★ 4.7</Star></Text5>
-                        <Texxt>707 ₽</Texxt>
-                        <Text6>Apple EarPods <Star1>★ 4.5</Star1></Text6>
-                        <Texxt1>466 ₽</Texxt1>
-                        <Text7>Apple EarPods <Star2>★ 4.5</Star2></Text7>
-                        <Texxt2>466 ₽</Texxt2>
-                    </Cont_img4>
-                </Block3>
-                <PodsDistant>Наушники Беспроводные</PodsDistant>
-                <Bbloock4>
-                    <Cont_img5>
-                        <Img8><img src={pods4}/></Img8>
-                        <Img9><img src={pods5}/></Img9>
-                        <Img10><img src={pods6}/></Img10>
-                    </Cont_img5>
-                    <Cont_img6>
-                        <Text8>Apple AirPods <Star3>★ 4.7</Star3></Text8>
-                        <Texxt3>1911 ₽</Texxt3>
-                        <Text9>GERLAX GH-04 <Star3>★ 4.7</Star3></Text9>
-                        <Texxt4>1309 ₽</Texxt4>
-                        <Text10>BOROFONE BO4 <Star3>★ 4.7</Star3></Text10>
-                        <Texxt5>1509 ₽</Texxt5>
-                    </Cont_img6>
-                </Bbloock4>
-                <Holder>Автодержатель</Holder>
-                <Bblock5>
-                    <Img11><img src={lonio}/></Img11>
-                    <Cont_img7>
-                        <Img12><img src={holder1}/></Img12>
-                        <Img13><img src={holder2}/></Img13>
-                        <Img14><img src={holder3}/></Img14>
-                    </Cont_img7>
-                    <Cont_img8>
-                        <Text11>BOROFONE BH32</Text11>
-                        <Text12>587 ₽</Text12>
-                        <Text13>-20%</Text13>
-                    </Cont_img8>
-                </Bblock5>
+                <Animated animationIn="bounceInDown" animationOut="fadeOut" isVisible={true}>
+                    <Header>
+                        <Left>
+                            <TextLink href="/"><Logo>QPICK</Logo></TextLink>
+                        </Left>
+                        <Center>
+                            <SmartphoneIcon style={{padding: 30}}/>
+                            <SearchContainer><SearchIcon style={{color: "gray", fontSize:16}}/><Input placeholder = "Введите модель телефона"></Input></SearchContainer>
+                        </Center>
+                        <Right>
+                            <TextLink href="/registration"><MenuItem>Регистрация</MenuItem></TextLink> 
+                            <TextLink href="/login"><MenuItem>Войти</MenuItem></TextLink>
+                            <TextLink href="/cart"><MenuItem><Badge badgeContent={4} color="primary"><ShoppingCartOutlined/></Badge></MenuItem></TextLink>
+                        </Right>
+                    </Header>
+                </Animated> 
+                <Animated animationIn="bounceInUp" animationOut="fadeOut" isVisible={true}>
+                    <Bblock1>
+                            <Text1>Аксессуары для <br/>Iphone 13 Pro Max</Text1> 
+                            <Img1><img src={Phone}/></Img1>
+                    </Bblock1>
+                    <Cases>Чехлы</Cases>
+                    <Bblock2>
+                        <Cont_img1>
+                            <TextLink href="/glass"><Img2><img src={case1}/></Img2></TextLink>
+                            <TextLink href="/silicone"><Img3><img src={case2}/></Img3></TextLink>
+                            <TextLink href="/leather"><Img4><img src={case3}/></Img4></TextLink>
+                        </Cont_img1>
+                        <Cont_img2>
+                            <TextLink href="/glass"><Text2>Стеклянные</Text2></TextLink>
+                            <TextLink href="/silicone"><Text3>Силиконовые</Text3></TextLink>
+                            <TextLink href="/leather"><Text4>Кожаные</Text4></TextLink>
+                        </Cont_img2>
+                    </Bblock2>
+                    <Pods>Наушники</Pods>
+                    <Block3>
+                        <Cont_img3>
+                            <Img5><img src={pods1}/></Img5>
+                            <Img6><img src={pods2}/></Img6>
+                            <Img7><img src={pods3}/></Img7>
+                        </Cont_img3>
+                        <Cont_img4>
+                            <Text5>Apple BYZ S852I <Star>★ 4.7</Star></Text5>
+                            <Texxt>707 ₽</Texxt>
+                            <Text6>Apple EarPods <Star1>★ 4.5</Star1></Text6>
+                            <Texxt1>466 ₽</Texxt1>
+                            <Text7>Apple EarPods <Star2>★ 4.5</Star2></Text7>
+                            <Texxt2>466 ₽</Texxt2>
+                        </Cont_img4>
+                    </Block3>
+                    <PodsDistant>Наушники Беспроводные</PodsDistant>
+                    <Bbloock4>
+                        <Cont_img5>
+                            <Img8><img src={pods4}/></Img8>
+                            <Img9><img src={pods5}/></Img9>
+                            <Img10><img src={pods6}/></Img10>
+                        </Cont_img5>
+                        <Cont_img6>
+                            <Text8>Apple AirPods <Star3>★ 4.7</Star3></Text8>
+                            <Texxt3>1911 ₽</Texxt3>
+                            <Text9>GERLAX GH-04 <Star3>★ 4.7</Star3></Text9>
+                            <Texxt4>1309 ₽</Texxt4>
+                            <Text10>BOROFONE BO4 <Star3>★ 4.7</Star3></Text10>
+                            <Texxt5>1509 ₽</Texxt5>
+                        </Cont_img6>
+                    </Bbloock4>
+                    <Holder>Автодержатель</Holder>
+                    <Bblock5>
+                        <Img11><img src={lonio}/></Img11>
+                        <Cont_img7>
+                            <Img12><img src={holder1}/></Img12>
+                            <Img13><img src={holder2}/></Img13>
+                            <Img14><img src={holder3}/></Img14>
+                        </Cont_img7>
+                        <Cont_img8>
+                            <Text11>BOROFONE BH32</Text11>
+                            <Text12>587 ₽</Text12>
+                            <Text13>-20%</Text13>
+                        </Cont_img8>
+                    </Bblock5>
+                </Animated>
             </Container>
             <Container_2>
-                <Q>
+                <Footer>
                     <CC>
                         <TextLink1 href="/"><Text14 >QPICK</Text14></TextLink1>
                         <Ul>
@@ -595,7 +600,7 @@ const Navbar = () => {
                             <Z>Copyright © 2024. Все права защищены.</Z>
                             <TextLink1 href="/rights">Права конфиденциальности</TextLink1>
                         </End>
-                </Q>
+                </Footer>
             </Container_2>
         </p>
     )
