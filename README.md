@@ -1,8 +1,24 @@
-Использованные Библиотеки : Styled components, react-router-dom, react-animated-css
+Сайт QPICK продажи аксессуаров телефонов (наушники, держатели, чехлы)
+
+Использованные Библиотеки : styled components, react-router-dom, react-animated-css
 
 Авторы : Илья Пономарёв, Илья Маслобитов и Алексей Муратов
 
-git clone 
+Клонировать и запустить:
+
+git clone https://github.com/Oktoberfeef/store-ds.git .
+
+npm install
+
+npm run dev
+
+Библиотеки:
+
+npm i react-animated-css
+
+npm i styled-components
+
+npm i react-router-dom
 
 <h3>День 1 (28 мая)</h3>
 <h4>Начали ознакомление с github</h4>
